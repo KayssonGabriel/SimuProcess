@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="tabela_processos" pattern="*.txt" />
+</component>

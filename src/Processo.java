@@ -21,8 +21,12 @@ class Processo {
         this.cp = this.tp + 1;
     }
 
-    @Override
-    public String toString() {
+    public String toStringParaArquivo() {
+        return String.format("%-5d %-8d %-8d %-10s %-6d %-8d %-15d",
+                pid, tp, cp, estado, nes, n_cpu, tempoRestante);
+    }
+
+    public String toStringParaTerminal() {
         return "PID: " + pid +
                 ", TP: " + tp +
                 ", CP: " + cp +
